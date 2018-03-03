@@ -9,7 +9,7 @@ angular.module('app', ['ngMessages'])
 		 .then(function(data){
 		 ctrl.fields=data;
 		 });
-    });
+    })
 	
 	.factory('formManaj',function($http){
 	var urlDesc = 'https://api.mongolab.com/api/1/databases/forms/collections/forms/51669d15e4b04a20de65fc58?apiKey=d3qvB8ldYFW2KSynHRediqLuBLP8JA8i';
