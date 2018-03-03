@@ -2,13 +2,12 @@
 
 angular.module('app', ['ngMessages'])
     .controller('DynFormCtrl', function (formManaj) {
-var ctrl=this;
- formManaj
- .loadDesc()
- .then(function(data){
- ctrl.fields=data;
- });
-        
+	var ctrl=this;
+		 formManaj
+		 .loadDesc()
+		 .then(function(data){
+		 ctrl.fields=data;
+		 });
     });
 	
 	.factory('formManaj',function($http){
